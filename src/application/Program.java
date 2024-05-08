@@ -35,6 +35,11 @@ public class Program {
 		for(Seller o : lista) {
 			System.out.println(o);
 		}
+		
+		System.out.println("\n---------- TEST 4: seller Insert -----------");
+		Seller newSeller = new Seller(null, "Greg", "greg@gmail.com", new Date(), 4000.00, new Department(2,null));
+		sellerdao.insert(newSeller);
+		System.out.println("Inserido! Novo id: " + newSeller.getId());
 	}
 
 }
