@@ -29,6 +29,12 @@ public class Program {
 		for(Seller o : lista) {
 			System.out.println(o);
 		}
+		
+		System.out.println("\n---------- TEST 3: seller FindAll -----------");
+		lista = sellerdao.findAll();
+		for(Seller o : lista) {
+			System.out.println(o);
+		}
 	}
 
 }
